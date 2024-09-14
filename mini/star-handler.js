@@ -74,6 +74,7 @@ d3.json('stars.json').then(coordinates => {
 
             d3.select(this)
                 .transition()
+                .duration(2000)
                 .attr("points", starPoints(xScale(nextx), yScale(nexty), spikes, outerRadius, innerRadius));
         });
     });
